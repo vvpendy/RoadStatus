@@ -1,8 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System;
-using System.Net.Http;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace RoadStatus
 {
@@ -11,8 +8,8 @@ namespace RoadStatus
         static async Task Main(string[] args)
         {
              var config = new ConfigurationBuilder()
-                .SetBasePath(AppContext.BaseDirectory) // Set base path to the app directory
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true) // Add JSON configuration file
+                .SetBasePath(AppContext.BaseDirectory) 
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true) 
                 .Build();
 
             if (args.Length != 1)
