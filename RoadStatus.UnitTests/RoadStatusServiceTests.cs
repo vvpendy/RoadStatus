@@ -32,7 +32,7 @@ namespace RoadStatusUnitTests
         {
         string roadId = "A2";
         string expectedDisplayName ="A3";
-        string expectedResponse = $"[{{\"displayName\": \"{expectedDisplayName}\", \"statusSeverity\": \"Good\", \"statusSeverityDescription\": \"No Exceptional Delays\"}}]";
+        string expectedResponse = $"[{{\"displayName\": \"{expectedDisplayName}\"}}]";
 
         _httpMessageHandlerMock
             .Protected()
@@ -59,7 +59,7 @@ namespace RoadStatusUnitTests
         {
             string roadId = "A2";
             string expectedStatusSeverity ="XXXX";
-            string expectedResponse = $"[{{\"statusSeverity\": \"{expectedStatusSeverity}\", \"statusSeverityDescription\": \"No Exceptional Delays\"}}]";
+            string expectedResponse = $"[{{\"statusSeverity\": \"{expectedStatusSeverity}\"}}]";
 
             _httpMessageHandlerMock
                 .Protected()
