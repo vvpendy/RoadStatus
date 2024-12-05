@@ -1,8 +1,8 @@
-using System;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json.Linq;
 
-namespace RoadStatus{
+namespace RoadStatus
+{
     public class RoadStatusService
     {
         private readonly string BaseUrl = "https://api.tfl.gov.uk/Road/";
